@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for sapcc.local
+;
+$TTL	604800
+@	IN	SOA	ns.sapcc.local. root.sapcc.local. (
+			 151225		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.
+91	IN	PTR	ns.sapcc.local.
+
+; other computers
+91	IN	PTR	bigdata1.sapcc.local.
+92	IN	PTR	bigdata2.sapcc.local.
+93	IN	PTR	bigdata3.sapcc.local.
+94	IN	PTR	bigdata4.sapcc.local.

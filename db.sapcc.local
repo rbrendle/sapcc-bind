@@ -1,0 +1,18 @@
+;
+; BIND data file for sapcc.local
+;
+$TTL	604800
+@	IN	SOA	ns.sapcc.local. root.sapcc.local. (
+			 151227		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.sapcc.local.
+ns	IN	A	10.159.124.91
+; list the servers
+bigdata1  IN    A       10.159.124.91
+bigdata2  IN    A       10.159.124.92
+bigdata3  IN    A       10.159.124.93
+bigdata4  IN    A       10.159.124.94
