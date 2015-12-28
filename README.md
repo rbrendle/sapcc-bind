@@ -6,6 +6,6 @@ It basically contains two files, which serve as the "zone" configuration. One (d
 
 You need to include these files into the domain directory file "named.conf.local". 
 
-This is only the DNS server configuration. It is activated by using resolvconf. Do not overwrite just the /etc/resolv.conf file. This file is generated and will change over time. It's content is (without a DHCP configuration) generated out of the resolvconf configuration (in /etc/resolvconf) and the basic network configuration (/etc/network).
+This is only the DNS server configuration. It is activated by using resolvconf. Do not overwrite just the /etc/resolv.conf file. This file is generated and will change over time. Its content is (without a DHCP configuration) generated out of the resolvconf configuration (in /etc/resolvconf) and the basic network configuration (/etc/network).
 
 Still without an DHCP-configuratio the local hostname and the search domain have to be maintained in /etc/hosts.
