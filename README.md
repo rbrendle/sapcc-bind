@@ -6,6 +6,8 @@ It basically contains two files, which serve as the "zone" configuration. One (d
 
 You need to include these files into the domain directory file "named.conf.local". 
 
-This is only the DNS server configuration. It is activated by using resolvconf. Do not overwrite just the /etc/resolv.conf file. This file is generated and will change over time. Its content is (without a DHCP configuration) generated out of the resolvconf configuration (in /etc/resolvconf) and the basic network configuration (/etc/network).
+This is only the DNS server configuration - no DHCP yet. It is activated by using resolvconf. To connect to the DNS server, do not overwrite just the /etc/resolv.conf file. This file is generated and will change over time. Its content is (without a DHCP configuration) generated out of the resolvconf configuration (in /etc/resolvconf) and the basic network configuration (/etc/network).
 
-Still without an DHCP-configuratio the local hostname and the search domain have to be maintained in /etc/hosts.
+Without an DHCP-configuration the local hostname of a machine and the search domain of the machine ("sapcc.local") have to be maintained in /etc/hosts directly, but just the local hostname. 
+
+There is an easy test for a succesful DNS setup: For every managed machine the command: host `hostname` should give a reasonable result. For more testing use "dig" and "dig -x", if needed. 
