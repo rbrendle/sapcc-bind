@@ -1,6 +1,6 @@
 # sapcc-bind
 
-The bind configuration for a simple DNS server in the cluster. 
+The bind configuration for a simple DNS server in the cluster running on Ubuntu 15.4.
 
 It basically contains two files, which serve as the "zone" configuration. One (db.sapcc.local) describes the servers in the domain and their IP addresses. There is a reverse mapping in the corresponding db.124.159.10-file (the IP adddresses in the file name here are usually written from the right to the left to fit with the normal DNS naming direction). This second file contains the reverse mapping from IP addresses to hostnames. 
 
