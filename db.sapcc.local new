@@ -1,0 +1,18 @@
+;
+; BIND data file for sapcc.local
+;
+$TTL	604800
+@	IN	SOA	ns.sapcc.local. root.sapcc.local. (
+			 090116		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	    IN	  NS	  ns.sapcc.local.
+ns	  CNAME	      ns1.admin.sapcc.local.
+; list the servers (point it to the admin interface for the moment, to be modified)
+bigdata1  CNAME       bigdata1.admin.sapcc.local.
+bigdata2  CNAME       bigdata2.admin.sapcc.local.
+bigdata3  CNAME       bigdata3.admin.sapcc.local.
+bigdata4  CNAME       bigdata4.admin.sapcc.local.
